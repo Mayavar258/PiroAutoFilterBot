@@ -49,6 +49,11 @@ REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'False')), False)
 
+#url links
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shorturllink.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', '0171eba95f837a455105157e33525e949b2b95c2')
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
+
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://mayaguru2580:A.M.R.K.S.@filterbot2.pcprjju.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Telegram")
