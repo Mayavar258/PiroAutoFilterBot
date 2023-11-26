@@ -1,13 +1,10 @@
-FROM python:3.8-slim-buster
-
-RUN apt update && apt upgrade -y
-RUN apt install git -y
-COPY requirements.txt /requirements.txt
-
-RUN cd /
-RUN pip3 install -U pip && pip3 install -U -r requirements.txt
+FROM python:3.10-alpine
 WORKDIR /PiroAutoFilterBot
-
+COPY requirements.txt .
+RUN apk update && \
+    apk upgrade && \
+    apk add --no-cache git && \
+    pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
 COPY . .
-
 CMD ["python3", "bot.py"]
