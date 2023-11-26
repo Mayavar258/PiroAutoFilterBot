@@ -55,7 +55,7 @@ SHORTLINK_API = environ.get('SHORTLINK_API', 'd70d2f40cefc0a39d81e1b2be77d409da7
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://liver:AMRKS2580@cluster0.lbpjhcu.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://sena:sena2580@cluster0.fujluil.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Telegram")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
