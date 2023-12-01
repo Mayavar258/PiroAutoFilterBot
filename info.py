@@ -20,7 +20,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = "1522127"
 API_HASH = "1252ffe16baf341bfd7236f92df76b0e"
-BOT_TOKEN = "6868905933:AAGjbzEVFhGjwjlMq4GKhCtahgDEc0ZnWck"
+BOT_TOKEN = "6763065689:AAF70pVVKLt01Umod6ITxtouIs5j2cTSQ9I"
 PORT = environ.get("PORT", "8080")
 
 # Bot settings
@@ -37,7 +37,7 @@ REQ_PICS = (environ.get('REQ_PICS', 'https://graph.org/file/5cb80fa6096997b7226b
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1006159057').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1006159057').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL', '-1002014717184')
 auth_grp = environ.get('AUTH_GROUP')
