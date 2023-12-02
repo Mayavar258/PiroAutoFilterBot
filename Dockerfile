@@ -1,10 +1,8 @@
 FROM python:3.9.1
-WORKDIR /PiroAutoFilterBot
-COPY requirements.txt .
-RUN apk update && \
-    apk upgrade && \
-    apk add --no-cache git && \
-    pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt
+RUN apt update && apt upgrade -y
+RUN apt install git -y
+RUN cd /PiroAutoFilterBot
+COPY requirements.txt /requirements.txt
+RUN pip3 install -U pip && pip3 install -U -r requirements.txt
 COPY . .
 CMD ["python3", "bot.py"]
