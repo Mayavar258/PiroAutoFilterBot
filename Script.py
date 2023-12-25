@@ -33,7 +33,7 @@ class script(object):
 😎 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖻𝗒 @good_name"""
 
     ABOUT_TXT = """<b>○ 𝖬𝗒 𝖭𝖺𝗆𝖾: {}
-○ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : <a href='https://t.me/tamil_mannar'>𝖳𝗁𝗂𝗌 𝖯𝖾𝗋𝗌𝗈𝗇</a>
+○ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : <a href='tg://settings'>𝖳𝗁𝗂𝗌 𝖯𝖾𝗋𝗌𝗈𝗇</a>
 ○ 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾 : 𝖯𝗒𝗍𝗁𝗈𝗇 𝟥 
 ○ 𝖫𝗂𝖻𝗋𝖺𝗋𝗒 : 𝖯𝗒𝗋𝗈𝗀𝗋𝖺𝗆 𝖺𝗌𝗒𝗇𝖼𝗂𝗈 𝟢.𝟣𝟩.𝟣 
 ○ 𝖲𝖾𝗋𝗏𝖾𝗋 : Contabo
@@ -44,7 +44,7 @@ class script(object):
 <i>Special Thanks to EvaMaria Devs & Cloners for the codes </i>
 <b>DEV:</b>
 
-- <a href=https://t.me/tamil_mannar>TAMIL_MANNAR</a>"""
+- <a href='tg://settings'>Him</a>"""
 #please don't change repo link give credit :)
 
     MANUELFILTER_TXT = """ʜᴇʟᴘ: <b>ꜰɪʟᴛᴇʀꜱ</b>
